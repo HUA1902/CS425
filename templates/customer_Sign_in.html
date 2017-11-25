@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Sign in</title>
+    <title>Sign up</title>
 
 
     <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -17,22 +17,47 @@
     <div class="header">
         <nav>
             <ul class="nav nav-pills pull-right">
-                <li role="presentation"><a href="index-light.html">Home</a></li>
-                <li role="presentation" class="active"><a href="customer_sign_up.html">&emsp;Sign Up</a></li>
+                <li role="presentation" ><a href="index-light.html">Home</a></li>
             </ul>
         </nav>
-        <h1 class="text-muted">Target</h1>
+        <h1 class="text-muted">Create your Target account</h1>
     </div>
 
     <div class="jumbotron">
-        <h2>Sign in</h2>
-        <form class="form-signin">
-            <label for="inputID" class="sr-only">ID</label>
-            <input type="number" name="inputID" id="inputID" class="form-control" placeholder="ID" required autofocus>
+        <h2>All fields required. Already have a Target account?<h5><a href="customer_Sign_in.html">Sign in</a></h5></h2>
+        <form class="form-signin" action="" method="post">
+            <label for="inputCustomerID" class="sr-only">Customer ID</label>
+            <input type="number" name="inputCustomerID" id="inputCustomerID" class="form-control" placeholder="ID" required autofocus>
+            <p></p>
+            <label for="inputName" class="sr-only">First Name</label>
+            <input type="name" name="inputName" id="inputName" class="form-control" placeholder="First Name" required autofocus>
+            <label for="inputName" class="sr-only">Middle Name</label>
+            <input type="name" name="inputName" id="inputName" class="form-control" placeholder="Middle Name" required autofocus>
+            <label for="inputName" class="sr-only">Last Name</label>
+            <input type="name" name="inputName" id="inputName" class="form-control" placeholder="Last Name" required autofocus>
             <label for="inputPassword" class="sr-only">Password</label>
             <input type="password" name="inputPassword" id="inputPassword" class="form-control" placeholder="Password" required>
-
-            <button id="btnSignUp" class="btn btn-lg btn-primary btn-block" type="button">Sign in</button>
+            <p></p>
+            <label for="inputEmail" class="sr-only">Email address</label>
+            <input type="email" name="inputEmail" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+            <p></p>
+            <label for="inputAddress" class="sr-only">Street address line 1</label>
+            <input type="text" name="inputAddress" id="inputAddress" class="form-control" placeholder="Street address line 1" required>
+            <label for="inputAddress" class="sr-only">Street address line 2</label>
+            <input type="text" name="inputAddress" id="inputAddress" class="form-control" placeholder="Street address line 2" required>
+            <label for="inputCity" class="sr-only">City</label>
+            <input type="text" name="inputCity" id="inputCity" class="form-control" placeholder="City" required>
+            <label for="inputState" class="sr-only">State</label>
+            <input type="text" name="inputState" id="inputState" class="form-control" placeholder="State" required>
+            <label for="inputCode" class="sr-only">Street address line 1</label>
+            <input type="number" name="inputCode" id="inputCode" class="form-control" placeholder="Zip code" required>
+            <p></p>
+            <label for="inputPhone" class="sr-only">Phone number</label>
+            <input type="number" name="inputPhone" id="inputPhone" class="form-control" placeholder="Phone number" required>
+            <label for="inputPhone" class="sr-only">Phone number 2</label>
+            <input type="number" name="inputPhone" id="inputPhone" class="form-control" placeholder="Phone number 2" required>
+            <a href="Signup_Success.html" class="btn btn-lg btn-primary btn-block">Sign up</a>
+            <a href="index-light.html"  class="btn btn-lg btn-primary btn-block">Cancel</a>
         </form>
     </div>
 
